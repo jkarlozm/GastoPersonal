@@ -20,18 +20,80 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
+        <!-- Menu -->
         <nav>
             <div class="nav-wrapper">
-                <a href="#!" class="brand-logo center">GASTOS</a>
+                <a href="#!" class="brand-logo center">BIENVENIDO</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             </div>
-        </nav>        
+        </nav>
+        <!--Barra lateral menu-->        
         <ul class="sidenav" id="mobile-demo">
-           <li><a href="#"><i class="material-icons">free_breakfast</i> Productos</a></li>
-           <li><a href="#"><i class="material-icons">format_list_numbered</i>Listas</a></li>
-           <li><a href="#"><i class="material-icons">monetization_on</i>Precios</a></li>
+           <li><a href="#"><i class="material-icons deep-orange-text">free_breakfast</i> Productos</a></li>
+           <li><a href="#"><i class="material-icons deep-orange-text">format_list_numbered</i>Lista Compras</a></li>
+           <li><a href="#"><i class="material-icons deep-orange-text">monetization_on</i>Precios</a></li>
+           <li><a href="#"><i class="material-icons deep-orange-text">credit_card</i>Monto Tarjeta Vales</a></li>
+           <li><a href="#"><i class="material-icons deep-orange-text">exit_to_app</i>Logout</a></li>
         </ul>
-            
+        
+        
+        <!-- Tabla -->
+        <div class="container">
+            <div class="row">
+                <blockquote>
+                    <h4 class="center-align">VALES</h4>
+                </blockquote>
+            </div>
+            <div class="row">
+                <table class="centered striped">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Cantidad</th>
+                            <th>Fecha</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>$ 980</td>
+                            <td>25 Abril 2020</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> 
+
+            <!-- Modal -->
+            <div id="modal1" class="modal modal-fixed-footer">
+                <div class="modal-content">
+                    <div class="row">
+                        <h4 class="center-align">Monto Vales</h4>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s10 offset-s1">
+                            <input type="number" id="monto" class="validate">
+                            <label for="monto">Monto</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s10 offset-s1">
+                            <input type="text" id="fecha" class="datepicker">
+                            <label for="fecha">Fecha</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat"><i class="material-icons purple-text">close</i></a>
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat"><i class="material-icons purple-text">check</i></a>
+                </div>
+            </div>
+
+
+            <!-- Boton Modal -->
+            <div class="fixed-action-btn">
+                <a href="#modal1" class="btn-floating btn-large red modal-trigger"><i class="large material-icons">add</i></a>
+            </div>
+        </div>
         
             
 
